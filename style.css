@@ -1,0 +1,289 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(26, 128, 1, 0.432);
+    font-family: "Nunito";
+}
+
+.secoes {
+    background-color: rgb(41, 82, 61);
+    width: 97.9%;
+    height: 5em;
+    padding: 1em;
+    color: white;
+}
+
+.lista {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding: 0.8em;
+    font-size: 1.8em;
+    position: relative;
+    list-style: none;
+}
+
+.item1,
+.item2 {
+    margin-right: 18rem;
+}
+
+
+.linkcabecalho {
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+.linkcabecalho::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: rgb(255, 102, 0);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: 1s;
+}
+
+.linkcabecalho:hover::after {
+    width: 100%;
+
+}
+
+.linkcabecalho:hover {
+    color: rgb(135, 253, 0);
+}
+
+
+.imagem_header {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    filter: blur(2px);
+}
+
+.titulo_principal {
+    position: relative;
+    padding-top: 25rem;
+    padding-left: 10rem;
+    font-size: 4.5em;
+    color: white;
+}
+
+.section01 {
+    margin-top: 14em;
+    background-color: rgb(11, 122, 63);
+    padding: 1rem;
+}
+
+.titulo_secao01 {
+    font-size: 5rem;
+    padding: 1em;
+    color: rgb(14, 49, 5);
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.titulo_exodo {
+    font-size: 2em;
+    margin-bottom: 1rem;
+    color: rgb(255, 102, 0);
+}
+
+.titulo_causas {
+    font-size: 2em;
+    margin-bottom: 1rem;
+    color: rgb(255, 102, 0);
+}
+
+.div_001 {
+    width: 70%;
+    background-color: aliceblue;
+    padding: 4em;
+    border-bottom-right-radius: 2em;
+    border-top-left-radius: 2em;
+    margin-left: 3rem;
+}
+
+.div_001:hover,
+.div_002:hover {
+    transform: scale(1.05);
+    transition: 1s;
+}
+
+.div_002 {
+    width: 70%;
+    background-color: aliceblue;
+    padding: 4em;
+    border-bottom-left-radius: 2em;
+    border-top-right-radius: 2em;
+    margin-top: 4rem;
+    margin-left: 12rem;
+    margin-bottom: 4rem;
+}
+
+.img_section02 {
+    max-width: 100%;
+    position: absolute;
+    filter: blur(3px);
+}
+
+.titulo_secao02 {
+    position: relative;
+    color: white;
+    font-size: 7em;
+    padding-top: 4em;
+    padding-left: 7em;
+    margin: none;
+
+}
+
+.titulo_secao02::after {
+    content: " ";
+    width: 0%;
+    height: 3px;
+    background-color: rgb(2, 255, 234);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: 1s;
+}
+
+.titulo_secao02:hover::after {
+    width: 100%;
+}
+
+.titulo_secao02:hover {
+    color: rgb(2, 255, 234);
+}
+
+.texto_secao02 {
+    position: relative;
+    margin-top: 20em;
+    padding: 4em;
+    background-color: aliceblue;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.box-flashcards {
+    margin-top: 3rem;
+    position: relative;
+    width: 400px;
+    height: 550px;
+}
+
+.box-flashcards:hover .flashcards {
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
+
+.flashcards {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+}
+
+.frente,
+.frente2,
+.frente3,
+.tras {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 10px #0000009b;
+    backface-visibility: hidden;
+}
+
+.frente {
+    background-image: url(img/Imagem\ drone.jpg);
+    background-size: cover;
+}
+
+.frente2 {
+    background-image: url(img/imagem\ GPS.jpg);
+    background-size: cover;
+}
+
+.frente3 {
+    background-image: url(img/Software\ no\ campo.jpg);
+    background-size: cover;
+}
+
+.tras {
+    background-color: white;
+    transform: rotateY(180deg);
+}
+
+.titulo-flashcard {
+    font-size: 40px;
+    text-align: center;
+}
+
+.texto-flashcards {
+    font-size: 25px;
+    text-align: center;
+}
+
+.rodape {
+    background-color: #000902;
+    color: white;
+    padding: 3rem;
+}
+
+.titulo_rodape {
+    padding: 1.8rem;
+    font-size: 3rem;
+}
+
+.titulo_rodape02 {
+    padding: 2rem;
+    font-size: 1.8rem;
+}
+
+.referencias_imagem,
+.referencia_fonte {
+    font-size: 1rem;
+    margin-left: 3rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.meu_perfil {
+    margin-left: 70rem;
+    background-color: white;
+    width: 5rem;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.meu_perfil:hover {
+    transform: scale(1.10);
+    transition: 0.5s;
+}
+
+.icone {
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    margin-bottom: 0.1rem;
+}
